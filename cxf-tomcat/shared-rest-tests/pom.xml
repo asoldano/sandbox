@@ -44,12 +44,6 @@
       <version>${cxf.version}</version>
       <scope>test</scope>
     </dependency>
-    <dependency>
-      <groupId>org.jboss.ws.cxf</groupId>
-      <artifactId>jbossws-cxf-test-utils</artifactId>
-      <version>5.1.8.Final</version>
-      <scope>test</scope>
-    </dependency>
   </dependencies>
 
 </project>
