@@ -35,7 +35,7 @@
     <ecj.version>4.6.1</ecj.version>
     <version.org.eclipse.aether>1.1.0</version.org.eclipse.aether>
     <version.org.apache.maven>3.3.9</version.org.apache.maven>
-    <cxf.version>3.1.10</cxf.version>
+    <cxf.version>3.1.5.redhat-630224</cxf.version>
     <spring.version>4.1.9.RELEASE</spring.version>
   </properties>
 
