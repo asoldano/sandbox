@@ -58,14 +58,14 @@ public class CustomerResource20Test
                .addClass(org.jboss.test.jaxrs.examples.ex03_1.domain.Customer.class)
                .addClass(org.jboss.test.jaxrs.examples.ex03_1.services.CustomerResource.class)
                .addClass(org.jboss.test.jaxrs.examples.ex03_1.services.ShoppingApplication.class)
-               .addAsLibrary(JBossWSTestHelper.resolveDependency("org.apache.cxf:cxf-rt-frontend-jaxrs:" + System.getProperty("cxf.version")))
-               .addAsLibrary(JBossWSTestHelper.resolveDependency("org.apache.cxf:cxf-core:" + System.getProperty("cxf.version")))
-               .addAsLibrary(JBossWSTestHelper.resolveDependency("org.apache.cxf:cxf-rt-transports-http:" + System.getProperty("cxf.version")))
-               .addAsLibrary(JBossWSTestHelper.resolveDependency("javax.annotation:javax.annotation-api:1.2"))
-               .addAsLibrary(JBossWSTestHelper.resolveDependency("javax.ws.rs:javax.ws.rs-api:2.0.1"))
-               .addAsLibrary(JBossWSTestHelper.resolveDependency("org.apache.ws.xmlschema:xmlschema-core:2.2.1"))
-               .addAsLibrary(JBossWSTestHelper.resolveDependency("org.codehaus.woodstox:stax2-api:3.1.4"))
-               .addAsLibrary(JBossWSTestHelper.resolveDependency("org.codehaus.woodstox:woodstox-core-asl:4.4.1"))
+//               .addAsLibrary(JBossWSTestHelper.resolveDependency("org.apache.cxf:cxf-rt-frontend-jaxrs:" + System.getProperty("cxf.version")))
+//               .addAsLibrary(JBossWSTestHelper.resolveDependency("org.apache.cxf:cxf-core:" + System.getProperty("cxf.version")))
+//               .addAsLibrary(JBossWSTestHelper.resolveDependency("org.apache.cxf:cxf-rt-transports-http:" + System.getProperty("cxf.version")))
+//               .addAsLibrary(JBossWSTestHelper.resolveDependency("javax.annotation:javax.annotation-api:1.2"))
+//               .addAsLibrary(JBossWSTestHelper.resolveDependency("javax.ws.rs:javax.ws.rs-api:2.0.1"))
+//               .addAsLibrary(JBossWSTestHelper.resolveDependency("org.apache.ws.xmlschema:xmlschema-core:2.2.1"))
+//               .addAsLibrary(JBossWSTestHelper.resolveDependency("org.codehaus.woodstox:stax2-api:3.1.4"))
+//               .addAsLibrary(JBossWSTestHelper.resolveDependency("org.codehaus.woodstox:woodstox-core-asl:4.4.1"))
                
                
 //               final String springVersion = System.getProperty("spring.version");
