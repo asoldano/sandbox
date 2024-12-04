@@ -30,6 +30,8 @@ def analyze_repo(repo_url, github_token, start_date=None):
     try:
         # Estrai owner e repo dall'URL
         _, owner, repo = repo_url.rstrip('/').rsplit('/', 2)
+        repo = repo.replace('.git', '')  # Rimuovi ".git" dal nome del repository se presente
+
 
         # GitHub API endpoint
         base_url = f"https://api.github.com/repos/{owner}/{repo}/pulls"
@@ -50,6 +52,15 @@ def analyze_repo(repo_url, github_token, start_date=None):
             params["page"] = page
             response = requests.get(base_url, headers=headers, params=params)
 
+            if response.status_code == 404:
+                print(f"Errore 404: il repository '{repo}' non è stato trovato o il token non ha accesso.")
+                return {
+                    "repo": repo,
+                    "num_prs": 0,
+                    "avg_close_time_hours": None,
+                    "num_open_prs": 0,
+                    "avg_age_open_prs_hours": None,
+                }
             if response.status_code != 200:
                 print(f"Errore per {repo}: {response.json()}")
                 return {
